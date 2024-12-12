@@ -33,5 +33,14 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }: any) {
+      addComponents({
+        ".container": {
+          maxWidth: "1200px",
+          margin: "0 auto",
+        },
+      })
+    },
+  ],
 } satisfies Config

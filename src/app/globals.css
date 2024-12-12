@@ -161,9 +161,7 @@ button {
   height: 80px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-animation: rotate3d 8s linear infinite;
-  animation: rotate3d 8s linear infinite;
-  -webkit-transition: all 0.3s;
+  animation: rotate3d 3.5s linear infinite;
   transition: all 0.3s;
 }
 
@@ -209,4 +207,22 @@ button {
     -webkit-transform: perspective(1000px) rotateY(360deg);
     transform: perspective(1000px) rotateY(360deg);
   }
+}
+
+.text-introduction {
+  font-family: "Ojuju";
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 100px;
+  color: #77c1ff;
+  text-shadow:
+    1px 0 #000000,
+    -1px 0 #000000,
+    0 1px #000000,
+    0 -1px #000000,
+    1px 1px #000000,
+    -1px -1px #000000,
+    1px -1px #000000,
+    -1px 1px #000000,
+    0px 15.53px 0px 0px #000000;
 }
