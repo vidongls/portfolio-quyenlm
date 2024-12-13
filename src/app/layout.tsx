@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={false}>
       <head>
         <link rel={"stylesheet"} type={"text/css"} href={"/assets/font-awesome/all.css"} />
       </head>

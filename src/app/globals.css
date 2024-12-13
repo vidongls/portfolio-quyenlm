@@ -226,3 +226,7 @@ button {
     -1px 1px #000000,
     0px 15.53px 0px 0px #000000;
 }
+
+.sticker {
+  will-change: transform, opacity;
+}
