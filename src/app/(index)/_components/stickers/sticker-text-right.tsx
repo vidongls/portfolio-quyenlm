@@ -24,7 +24,7 @@ export const StickerTextRight = () => {
   }, [])
 
   return (
-    <p ref={stickerRef} className="text-introduction sticker absolute right-[15%] top-1/2 -translate-y-1/2 transform">
+    <p ref={stickerRef} className="text-introduction sticker absolute right-[12%] top-1/2 -translate-y-1/2 transform">
       You smile
     </p>
   )

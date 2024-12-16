@@ -83,7 +83,7 @@ button {
   font-size: 18px;
   line-height: 24px;
   transition: color 0.3s ease;
-  background-color: #fed33d;
+  background-color: #fef568;
 }
 .button > span {
   position: relative;
@@ -152,7 +152,7 @@ button {
 }
 
 *::selection {
-  background-color: #fed33d;
+  background-color: #fef568;
 }
 
 .logo-face {
@@ -228,5 +228,5 @@ button {
 }
 
 .sticker {
-  will-change: transform, opacity;
+  will-change: transform, opacity, scroll;
 }

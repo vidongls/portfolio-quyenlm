@@ -9,6 +9,7 @@ export default {
   theme: {
     fontFamily: {
       ojuju: ["var(--font-ojuju)", "system-ui, sans-serif"],
+      roobert: ["var(--font-roobert)", "system-ui, sans-serif"],
     },
     extend: {
       colors: {
@@ -27,9 +28,23 @@ export default {
           "900": "#3d3d3d",
           "950": "#262626",
         },
+        "paris-daisy": {
+          "50": "#fefee8",
+          "100": "#fdfec3",
+          "200": "#fefc8a",
+          "300": "#fef568",
+          "400": "#fbe414",
+          "500": "#ebca07",
+          "600": "#cb9e03",
+          "700": "#a27106",
+          "800": "#86590d",
+          "900": "#714812",
+          "950": "#422606",
+        },
       },
       spacing: {
         5.5: "22px",
+        22: "88px",
       },
     },
   },

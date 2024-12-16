@@ -3,12 +3,15 @@
 import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@/libs/gsap"
+import { cn } from "@/utils"
 
 type Props = {
   title: string
+  icon?: React.ReactNode
+  className?: string
 }
 
-const Button: React.FC<Props> = ({ title }) => {
+const Button: React.FC<Props> = ({ title, icon, className }) => {
   const buttonRef = useRef(null)
   const flairRef = useRef(null)
 
@@ -82,9 +85,11 @@ const Button: React.FC<Props> = ({ title }) => {
   }, [])
 
   return (
-    <div ref={buttonRef} data-block="button" className="button button--stroke">
+    <div ref={buttonRef} data-block="button" className={cn("button button--stroke", className)}>
       <div ref={flairRef} className="button__flair" />
-      <span>{title}</span>
+      <span>
+        {title} {icon}
+      </span>
     </div>
   )
 }
