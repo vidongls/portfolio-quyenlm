@@ -230,3 +230,27 @@ button {
 .sticker {
   will-change: transform, opacity, scroll;
 }
+
+.app-progress-bar {
+  @apply fixed left-0 top-0 z-[10000] w-screen;
+
+  .progress {
+    background-color: var(--primary-color);
+    @apply relative h-[0.25rem] overflow-hidden;
+
+    &:before {
+      @apply content-[''];
+      @apply absolute bottom-0 top-0 block w-4;
+      @apply bg-[var(--neutral-white)] bg-opacity-50;
+      animation: loading 2s ease-in-out infinite;
+      box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.5);
+      left: -40px;
+    }
+  }
+
+  @keyframes loading {
+    100% {
+      left: calc(100% + 100px);
+    }
+  }
+}

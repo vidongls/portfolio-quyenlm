@@ -3,6 +3,8 @@ import { Ojuju } from "next/font/google"
 import "./globals.css"
 import { Layout } from "@/components/layout"
 import localFont from "next/font/local"
+import { Suspense } from "react"
+import Loading from "./loading"
 
 const ojuju = Ojuju({
   variable: "--font-ojuju",
@@ -84,10 +86,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={false}>
       <head>
-        <link rel={"stylesheet"} type={"text/css"} href={"/assets/font-awesome/all.css"} />
+        <link rel={"stylesheet"} type={"text/css"} href={"/assets/font-awesome/all.min.css"} />
       </head>
       <body className={`${ojuju.variable} antialiased ${roobert.className} h-[2000px] overflow-x-hidden`}>
-        <Layout>{children}</Layout>
+        <Suspense fallback={<Loading />}>
+          <Layout>{children}</Layout>
+        </Suspense>
       </body>
     </html>
   )
