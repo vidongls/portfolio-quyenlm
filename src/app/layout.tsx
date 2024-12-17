@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Le Minh quyen",
     description: "Designer portfolio",
     images: {
-      url: "/home/hero-footer",
+      url: "/home/hero-footer.svg",
       width: "100%",
       height: "100%",
     },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Le Minh quyen",
     description: "Designer portfolio",
     images: {
-      url: "/home/hero-footer",
+      url: "/home/hero-footer.svg",
       width: "100%",
       height: "100%",
     },
