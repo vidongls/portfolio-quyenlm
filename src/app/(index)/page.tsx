@@ -1,4 +1,4 @@
-import { ForMeSection, IntroductionSection, ShowCaseSection } from "./_components"
+import { ExperienceTimelineSection, ForMeSection, IntroductionSection, ShowCaseSection } from "./_components"
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <IntroductionSection />
       <ForMeSection />
       <ShowCaseSection />
+      <ExperienceTimelineSection />
     </div>
   )
 }

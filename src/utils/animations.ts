@@ -35,8 +35,8 @@ export const stickers = [
   {
     animation: {
       rotateZ: 200,
-      x: 400,
-      y: 300,
+      x: -400,
+      y: 200,
       ease: "none",
     },
 
@@ -287,7 +287,7 @@ export const stickers = [
     animation: {
       rotateZ: 600,
       x: 120,
-      y: 340,
+      y: 240,
       ease: "none",
     },
     trigger: "#section-introduction",

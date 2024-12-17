@@ -67,7 +67,7 @@ export default function RootLayout({
       <head>
         <link rel={"stylesheet"} type={"text/css"} href={"/assets/font-awesome/all.css"} />
       </head>
-      <body className={`${ojuju.variable} antialiased ${roobert.className} h-[2000px]`}>
+      <body className={`${ojuju.variable} antialiased ${roobert.className} h-[2000px] overflow-x-hidden`}>
         <Layout>{children}</Layout>
       </body>
     </html>
