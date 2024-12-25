@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Button from "../button"
 import { FaceLogo } from "./face-logo"
 import { Hamburger } from "./hamburger"
@@ -11,7 +12,9 @@ export const Header = () => {
         <Button title="Download Resume" />
       </div>
       <div className="flex flex-1 items-center justify-center">
-        <TextLogo />
+        <Link href="/">
+          <TextLogo />
+        </Link>
       </div>
 
       <div className="flex flex-1 items-center justify-end">

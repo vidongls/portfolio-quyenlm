@@ -1,8 +1,9 @@
 import { range } from "lodash"
+import Link from "next/link"
 
 export const FaceLogo = () => {
   return (
-    <div className="logo-face">
+    <Link href={"/journey"} className="logo-face">
       <img src="/sticker/face-logo.svg" alt="Quyen face" className="logo-face-front" />
       <div className="logo-face-side">
         {range(80).map((_, idx) => (
@@ -15,6 +16,6 @@ export const FaceLogo = () => {
         ))}
       </div>
       <img src="/sticker/face-logo.svg" alt="Quyen face" className="logo-face-back" />
-    </div>
+    </Link>
   )
 }

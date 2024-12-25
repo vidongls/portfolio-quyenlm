@@ -1,4 +1,5 @@
 import Button from "@/components/button"
+import Link from "next/link"
 
 export const ForMeSection = () => {
   return (
@@ -14,13 +15,15 @@ export const ForMeSection = () => {
             As a UX designer, I’m refining my craft to create meaningful experiences, but for now, I’m navigating the tough path
             of job hunting and perfecting my portfolio, hoping for the right opportunity.
           </p>
-          <Button
-            title="My painful journey"
-            icon={
-              <i className="fa-light fa-arrow-right-long ml-1 transition-transform ease-in-out group-hover:translate-x-1"></i>
-            }
-            className="group"
-          />
+          <Link href="/journey">
+            <Button
+              title="My painful journey"
+              icon={
+                <i className="fa-light fa-arrow-right-long ml-1 transition-transform ease-in-out group-hover:translate-x-1"></i>
+              }
+              className="group"
+            />
+          </Link>
         </div>
       </div>
     </section>
